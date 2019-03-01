@@ -14,7 +14,6 @@
 .ce-block:first-child .ce-paragraph:empty:before {
     content: attr(data-placeholder-c);
     color: #9aa5ab;
-    font-size: 13px;
 }
 
 .ce-block:first-child .ce-paragraph:empty:focus:before {

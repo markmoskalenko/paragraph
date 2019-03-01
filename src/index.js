@@ -29,6 +29,7 @@ class Paragraph {
    */
   constructor({data, config, api}) {
     this.api = api;
+    console.log(config);
 
     this._CSS = {
       block: this.api.styles.block,
