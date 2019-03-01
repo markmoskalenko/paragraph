@@ -35,6 +35,8 @@ class Paragraph {
       wrapper: 'ce-paragraph'
     };
 
+    this._placeholder = config.placeholder || 'Введите текст';
+
     this._data = {};
     this._element = this.drawView();
 
@@ -49,6 +51,7 @@ class Paragraph {
   drawView() {
     let div = document.createElement('DIV');
 
+    div.setAttribute('data-placeholder', this._placeholder);
     div.classList.add(this._CSS.wrapper, this._CSS.block);
     div.contentEditable = true;
 
@@ -72,7 +75,7 @@ class Paragraph {
    */
   merge(data) {
     let newData = {
-      text : this.data.text + data.text
+      text: this.data.text + data.text
     };
 
     this.data = newData;
@@ -165,7 +168,7 @@ class Paragraph {
    */
   static get pasteConfig() {
     return {
-      tags: [ 'P' ]
+      tags: ['P']
     };
   }
 }
