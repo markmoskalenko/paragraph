@@ -51,7 +51,7 @@ class Paragraph {
   drawView() {
     let div = document.createElement('DIV');
 
-    div.setAttribute('data-placeholder', this._placeholder);
+    div.setAttribute('data-placeholder-c', this._placeholder);
     div.classList.add(this._CSS.wrapper, this._CSS.block);
     div.contentEditable = true;
 
