@@ -8,7 +8,7 @@
   ],
   "description": "Paragraph Tool for CodeX.Editor",
   "license": "MIT",
-  "repository": "https://github.com/codex-editor/paragraph",
+  "repository": "https://github.com/markmoskalenko/paragraph",
   "main": "./dist/bundle.js",
   "scripts": {
     "build": "webpack --config ./webpack.config.js --mode production --watch"
